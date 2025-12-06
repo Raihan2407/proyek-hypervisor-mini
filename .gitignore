@@ -1,0 +1,63 @@
+cat > .gitignore << 'EOF'
+# ============================================
+# .gitignore - Proyek Hypervisor Mini
+# ============================================
+
+# FILE BESAR - JANGAN UPLOAD!
+*.iso
+*.qcow2
+*.qcow
+*.img
+*.vmdk
+*.vdi
+*.vhd
+
+# Snapshot VM
+*.snapshot
+*.snap
+
+# Temporary & Log Files
+*.log
+*.tmp
+*.temp
+*~
+logs/
+
+# Backup Files
+*.bak
+*.backup
+*.old
+
+# System Files (OS)
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+env/
+
+# Sensitive Data
+*.pem
+*.key
+*password*
+*secret*
+.env
+
+# Build & Cache
+build/
+dist/
+.cache/
+
+# Project Specific
+iso-storage/
+vm-storage/
+EOF
